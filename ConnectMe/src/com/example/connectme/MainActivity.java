@@ -23,23 +23,29 @@ public class MainActivity extends ActionBarActivity {
         
         final Button loginButton = (Button) findViewById(R.id.ViewProfile);
         
-        //final String u = new String("Vaibhav");
-        //final String p= new String("Shinde");
-        
         
         loginButton.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
                 if ((uname.getText().toString().equals("Vaibhav")) && (passwd.getText().toString().equals("Shinde") )) {
 
-                    // Create an explicit Intent for starting the HelloAndroid
+                    // Create an explicit Intent for starting the userProfile activity.
                     // Activity
                     Intent userProfileIntent = new Intent(MainActivity.this,
                             UserProfile.class);
 
-                    // Use the Intent to start the HelloAndroid Activity
+                    // Use the Intent to start the BusinessProfile Activity
                     startActivity(userProfileIntent);
-                } else {
+                } 
+                else if ((uname.getText().toString().equals("Pushpa")) && (passwd.getText().toString().equals("Iyer") ))
+                {
+                	Intent busiProfileIntent = new Intent(MainActivity.this,
+                            BusiProfile.class);
+
+                    // Use the Intent to start the HelloAndroid Activity
+                    startActivity(busiProfileIntent);
+                }
+                else {
                     uname.setText("");
                     passwd.setText("");
                 }

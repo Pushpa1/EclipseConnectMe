@@ -10,5 +10,6 @@
     <string name="EnterTag">Enter Tag</string>
     <string name="ViewProfile">View Profile</string>
     <string name="SubmitResume">Submit Resume</string>
+    <string name="Search">Search</string>
 
 </resources>

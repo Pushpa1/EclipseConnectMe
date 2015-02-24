@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserProfile"></activity>
+        <activity android:name=".BusiProfile"></activity>
     </application>
 
 </manifest>
